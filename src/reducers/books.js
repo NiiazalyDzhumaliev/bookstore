@@ -1,5 +1,16 @@
 const initialState = {
-  books: [],
+  books: [
+    {
+      title: 'War and Piece',
+      category: 'novel',
+      id: new Date(),
+    },
+    {
+      title: 'War and Piece',
+      category: 'novel',
+      id: new Date(),
+    },
+  ],
 };
 
 const CREATE_BOOK = 'CREATE_BOOK';
