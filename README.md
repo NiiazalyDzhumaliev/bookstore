@@ -17,7 +17,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo](https://calculator-react-diamondas.herokuapp.com/)
+[Live Demo](https://bookstore-react-diamondas.herokuapp.com/)
 
 ## Getting Started
 
