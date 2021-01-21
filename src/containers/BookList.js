@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Book from './Book';
+import Book from '../components/Book';
 
 const { v4: UuidV4 } = require('uuid');
 
