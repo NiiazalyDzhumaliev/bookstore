@@ -6,22 +6,7 @@ import { Provider } from 'react-redux';
 import reducer from './reducers/books';
 import App from './components/App';
 
-const initialState = {
-  books: [
-    {
-      title: 'War and Piece',
-      category: 'novel',
-      id: 1,
-    },
-    {
-      title: 'War and Piece',
-      category: 'novel',
-      id: 2,
-    },
-  ],
-};
-
-const store = createStore(reducer, initialState);
+const store = createStore(reducer);
 
 ReactDOM.render(
   <React.StrictMode>

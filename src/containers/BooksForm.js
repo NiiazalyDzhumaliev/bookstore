@@ -17,6 +17,7 @@ const BooksForm = () => {
         Title
         <input type="text" id="title" name="title" />
       </label>
+      <br />
       <label htmlFor="categories">
         Choose a category
         <select id="categories" name="category-list">
@@ -27,6 +28,7 @@ const BooksForm = () => {
           ))}
         </select>
       </label>
+      <br />
       <input type="submit" value="Submit" />
     </form>
   );

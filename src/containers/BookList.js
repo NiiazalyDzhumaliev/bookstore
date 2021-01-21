@@ -7,7 +7,6 @@ const { v4: UuidV4 } = require('uuid');
 const BookList = ({ books }) => (
   <table>
     <tr>
-      <th>Book ID</th>
       <th>Title</th>
       <th>Category</th>
     </tr>
