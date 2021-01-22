@@ -3,7 +3,7 @@ export const CREATE_BOOK = bookObject => ({
   type: 'CREATE_BOOK',
 });
 
-export const REMOVE_BOOK = bookObject => ({
+export const REMOVE_BOOK = bookId => ({
   type: 'REMOVE_BOOK',
-  delId: bookObject.id,
+  delId: bookId,
 });

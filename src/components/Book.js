@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { REMOVE_BOOK } from '../actions';
 
 const Book = props => {
-  const { bookObject, onDeleteBook } = props;
-
-  const handleClick = () => {
-    onDeleteBook(bookObject);
-  };
+  const { bookObject, handleClick } = props;
 
   return (
     <tr>
@@ -22,13 +16,9 @@ const Book = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  onDeleteBook: bookObject => dispatch(REMOVE_BOOK(bookObject)),
-});
-
 Book.propTypes = {
   bookObject: PropTypes.objectOf(PropTypes.any).isRequired,
-  onDeleteBook: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(Book);
+export default Book;
