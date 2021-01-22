@@ -1,6 +1,30 @@
+import { useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { CREATE_BOOK } from '../actions';
+
 const { v4: UuidV4 } = require('uuid');
 
-const BooksForm = () => {
+const BooksForm = props => {
+  const { onSubmitForm } = props;
+  const [state, setState] = useState({
+    title: '',
+    category: '',
+  });
+
+  const handleChange = event => {
+    const {
+      target: { name, value },
+    } = event;
+
+    setState(prevState => ({ ...prevState, [name]: value }));
+  };
+
+  const handleSubmit = event => {
+    onSubmitForm(state);
+    event.preventDefault();
+  };
+
   const categories = [
     'Action',
     'Biography',
@@ -12,7 +36,7 @@ const BooksForm = () => {
   ];
 
   return (
-    <form id="form">
+    <form id="form" onChange={handleChange} onSubmit={handleSubmit}>
       <label htmlFor="title">
         Title
         <input type="text" id="title" name="title" />
@@ -20,7 +44,12 @@ const BooksForm = () => {
       <br />
       <label htmlFor="categories">
         Choose a category
-        <select id="categories" name="category-list">
+        <select
+          id="categories"
+          name="category"
+          value={state.category}
+          onChange={handleChange}
+        >
           {categories.map(category => (
             <option value={category} key={UuidV4()}>
               {category}
@@ -33,4 +62,13 @@ const BooksForm = () => {
     </form>
   );
 };
-export default BooksForm;
+
+const mapDispatchToProps = dispatch => ({
+  onSubmitForm: bookObject => dispatch(CREATE_BOOK(bookObject)),
+});
+
+BooksForm.propTypes = {
+  onSubmitForm: PropTypes.func.isRequired,
+};
+
+export default connect(null, mapDispatchToProps)(BooksForm);

@@ -6,13 +6,15 @@ const { v4: UuidV4 } = require('uuid');
 
 const BookList = ({ books }) => (
   <table>
-    <tr>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-    {books.map(book => (
-      <Book bookObject={book} key={UuidV4()} />
-    ))}
+    <tbody>
+      <tr>
+        <th>Title</th>
+        <th>Category</th>
+      </tr>
+      {books.map(book => (
+        <Book bookObject={book} key={UuidV4()} />
+      ))}
+    </tbody>
   </table>
 );
 
