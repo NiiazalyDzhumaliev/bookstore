@@ -18,9 +18,7 @@ const reducer = (state = initialState, action) => {
         }),
       };
     case REMOVE_BOOK: {
-      const updatedArray = state.books.filter(
-        book => book.id !== action.bookId,
-      );
+      const updatedArray = state.books.filter(book => book.id !== action.delId);
       return {
         ...state,
         books: updatedArray,

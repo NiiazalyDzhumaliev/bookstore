@@ -10,6 +10,7 @@ const BookList = ({ books }) => (
       <tr>
         <th>Title</th>
         <th>Category</th>
+        <th>Remove book</th>
       </tr>
       {books.map(book => (
         <Book bookObject={book} key={UuidV4()} />
