@@ -1,11 +1,9 @@
 export const CREATE_BOOK = bookObject => ({
+  ...bookObject,
   type: 'CREATE_BOOK',
-  title: bookObject.title,
-  category: bookObject.category,
 });
 
-export const REMOVE_BOOK = bookObject => ({
+export const REMOVE_BOOK = bookId => ({
   type: 'REMOVE_BOOK',
-  title: bookObject.title,
-  category: bookObject.category,
+  delId: bookId,
 });
