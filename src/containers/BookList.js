@@ -31,7 +31,7 @@ const BookList = props => {
 };
 
 const mapStateToProps = state => ({
-  books: state.books,
+  books: state.bks.books,
 });
 
 const mapDispatchToProps = dispatch => ({
