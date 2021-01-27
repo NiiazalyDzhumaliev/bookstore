@@ -50,6 +50,9 @@ const BooksForm = props => {
           value={state.category}
           onChange={handleChange}
         >
+          <option value="" key={UuidV4()}>
+            ---
+          </option>
           {categories.map(category => (
             <option value={category} key={UuidV4()}>
               {category}
