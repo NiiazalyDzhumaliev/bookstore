@@ -1,27 +1,10 @@
-import { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { CHANGE_FILTER } from '../actions';
+import { connect } from 'react-redux';
 
 const { v4: UuidV4 } = require('uuid');
 
 const CategoryFilter = props => {
-  const { onChangeFilter } = props;
-  const [state, setState] = useState({
-    category: '',
-  });
-
-  const handleChange = event => {
-    const {
-      target: { name, value },
-    } = event;
-
-    setState(prevState => ({ ...prevState, [name]: value }));
-  };
-
-  useEffect(() => {
-    onChangeFilter(state.category);
-  });
+  const { handleFilterChange, filter } = props;
 
   const categories = [
     'Action',
@@ -41,8 +24,8 @@ const CategoryFilter = props => {
           <select
             id="filter-categories"
             name="category"
-            value={state.category}
-            onChange={handleChange}
+            onChange={handleFilterChange}
+            value={filter}
           >
             <option value="" key={UuidV4()}>
               All
@@ -59,12 +42,13 @@ const CategoryFilter = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  onChangeFilter: bookCategory => dispatch(CHANGE_FILTER(bookCategory)),
+const mapStateToProps = state => ({
+  filter: state.filt.filter,
 });
 
 CategoryFilter.propTypes = {
-  onChangeFilter: PropTypes.func.isRequired,
+  handleFilterChange: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(CategoryFilter);
+export default connect(mapStateToProps)(CategoryFilter);
