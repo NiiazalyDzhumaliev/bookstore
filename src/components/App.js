@@ -5,8 +5,10 @@ import styles from './App.module.css';
 function App() {
   return (
     <div className={styles.app}>
-      <BookList />
-      <BooksForm />
+      <div className={styles.panel_main}>
+        <BookList />
+        <BooksForm />
+      </div>
     </div>
   );
 }
