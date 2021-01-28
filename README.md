@@ -1,10 +1,12 @@
 # Bookstore
 
-A bookstore app using React and Reduz
+A bookstore app using React and Redux
 
 > This is an assigment for Microverse React course. The goal is to create a bookstore app using React/Redux.
 
 Additional description about the project and its features.
+
+![BookStore](public/Screenshot_1.png)
 
 ## Built With
 
