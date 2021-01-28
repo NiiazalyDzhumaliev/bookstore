@@ -11,26 +11,19 @@ const BookList = props => {
     onDeleteBook(bookId);
   };
   return (
-    <table>
-      <tbody>
-        <tr>
-          <th>Title</th>
-          <th>Category</th>
-          <th>Remove book</th>
-        </tr>
-        {books
-          .filter(
-            book => filter === 'All' || filter === '' || book.category === filter,
-          )
-          .map(book => (
-            <Book
-              bookObject={book}
-              key={UuidV4()}
-              handleClick={() => handleClick(book.id)}
-            />
-          ))}
-      </tbody>
-    </table>
+    <div>
+      {books
+        .filter(
+          book => filter === 'All' || filter === '' || book.category === filter,
+        )
+        .map(book => (
+          <Book
+            bookObject={book}
+            key={UuidV4()}
+            handleClick={() => handleClick(book.id)}
+          />
+        ))}
+    </div>
   );
 };
 
