@@ -3,7 +3,10 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 const { v4: UuidV4 } = require('uuid');
 
 const initialState = {
-  books: [{ id: UuidV4(), title: 'Harry Potter', category: 'Kids' }],
+  books: [
+    { id: UuidV4(), title: 'Harry Potter', category: 'Kids' },
+    { id: UuidV4(), title: 'Dzhamilya', category: 'History' },
+  ],
 };
 
 const reducer = (state = initialState, action) => {

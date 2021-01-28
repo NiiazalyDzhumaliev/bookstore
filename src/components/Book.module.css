@@ -1,7 +1,7 @@
 .book_container {
   display: flex;
   justify-content: space-between;
-  height: 170px;
+  align-items: center;
   margin: 37px 100px 0;
   padding: 32px 147px 26px 27px;
   border-radius: 4px;
@@ -11,8 +11,6 @@
 
 .progress_container {
   display: flex;
-  justify-content: space-between;
-  /* width: 50%; */
 }
 
 .circle {
@@ -24,8 +22,9 @@
   transform: rotate(25deg);
 }
 
-.completed {
+.completed_container {
   display: flex;
+  align-items: center;
 }
 
 .category {
@@ -97,4 +96,33 @@
 #delete {
   text-align: center;
   margin-right: 15px;
+}
+
+.percent {
+  width: 68px;
+  height: 39px;
+  margin: 1px 92px 0 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  width: 80px;
+  height: 18px;
+  margin: 7px 79px 12px 12px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }

@@ -26,11 +26,11 @@ const Book = props => {
         </button>
       </div>
       <div className={styles.progress_container}>
-        <div className={styles.completed}>
+        <div className={styles.completed_container}>
           <p className={styles.circle} />
           <div>
-            <p>78%</p>
-            <p>Completed</p>
+            <p className={styles.percent}>78%</p>
+            <p className={styles.completed}>Completed</p>
           </div>
         </div>
         <div>
