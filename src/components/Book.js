@@ -7,14 +7,21 @@ const Book = props => {
   return (
     <div className={styles.book_container}>
       <div>
-        <p>{bookObject.category}</p>
-        <p>{bookObject.title}</p>
-        <p>Author</p>
-        <button type="button">Comment</button>
-        <button type="button" onClick={handleClick}>
+        <p className={styles.category}>{bookObject.category}</p>
+        <p className={styles.title}>{bookObject.title}</p>
+        <p className={styles.author}>Author</p>
+        <button type="button" className={styles.button}>
+          Comment
+        </button>
+        <button
+          type="button"
+          onClick={handleClick}
+          className={styles.button}
+          id={styles.delete}
+        >
           Delete
         </button>
-        <button type="button" onClick={handleClick}>
+        <button type="button" className={styles.button} id={styles.edit}>
           Edit
         </button>
       </div>

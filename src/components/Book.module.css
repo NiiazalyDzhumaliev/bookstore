@@ -11,6 +11,8 @@
 
 .progress_container {
   display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .circle {
@@ -24,4 +26,75 @@
 
 .completed {
   display: flex;
+}
+
+.category {
+  width: 49px;
+  height: 18px;
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  width: 197px;
+  height: 29px;
+  margin: 3px 323px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  width: 107px;
+  height: 19px;
+  margin: 4px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.button {
+  width: 73px;
+  height: 19px;
+  margin: 3px 0px 2px 0;
+  padding: 0;
+  text-align: left;
+  border: none;
+  border-right: 1px solid #e8e8e8;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+#edit {
+  border-right: 0;
+}
+
+#delete {
+  text-align: center;
+  margin-right: 15px;
 }

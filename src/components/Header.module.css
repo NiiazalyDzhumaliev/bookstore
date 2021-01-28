@@ -13,7 +13,7 @@
   width: 240px;
   height: 37px;
   margin: 12px 48px 2px 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   font-weight: bolder;
   font-stretch: normal;
@@ -27,7 +27,7 @@
   width: 59px;
   height: 16px;
   margin: 18px 24px 11px 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -42,7 +42,7 @@
   height: 16px;
   margin: 18px 10px 11px 24px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
