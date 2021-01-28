@@ -60,7 +60,7 @@ const BooksForm = props => {
           value={state.category}
           onChange={handleChange}
         >
-          <option value="" key={UuidV4()} disabled selected>
+          <option value="" key={UuidV4()} disabled defaultValue="">
             Category
           </option>
           {categories.map(category => (
