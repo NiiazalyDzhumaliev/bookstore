@@ -8,6 +8,7 @@
 
 .form {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -27,7 +28,6 @@
 
 .title_input {
   border-radius: 4px;
-  margin-right: 10px;
   height: 37px;
   padding-right: 200px;
   border: solid 1px #e8e8e8;
@@ -46,7 +46,6 @@
   width: 184px;
   height: 38px;
   padding: 7px 19px 8px 22px;
-  margin-left: 20px;
   border-radius: 3px;
   border: none;
   background-color: #0290ff;
