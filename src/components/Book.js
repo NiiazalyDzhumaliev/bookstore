@@ -6,7 +6,7 @@ const Book = props => {
 
   return (
     <div className={styles.book_container}>
-      <div>
+      <div className={styles.book_info}>
         <p className={styles.category}>{bookObject.category}</p>
         <p className={styles.title}>{bookObject.title}</p>
         <p className={styles.author}>Author</p>
@@ -33,10 +33,14 @@ const Book = props => {
             <p className={styles.completed}>Completed</p>
           </div>
         </div>
-        <div>
-          <p>{'current chapter'.toUpperCase()}</p>
-          <p>Chapter 17</p>
-          <button type="button">{'update progress'.toUpperCase()}</button>
+        <div className={styles.chapter_container}>
+          <p className={styles.current_chapter}>
+            {'current chapter'.toUpperCase()}
+          </p>
+          <p className={styles.chapter}>Chapter 17</p>
+          <button type="button" className={styles.update_progress}>
+            {'update progress'.toUpperCase()}
+          </button>
         </div>
       </div>
     </div>
