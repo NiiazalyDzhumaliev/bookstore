@@ -1,0 +1,174 @@
+.book_container {
+  display: flex;
+  align-items: center;
+  margin: 37px 100px 0;
+  padding: 32px 0 26px 27px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.book_info {
+  width: 40%;
+}
+
+.progress_container {
+  display: flex;
+}
+
+.circle {
+  border: 5px solid #379cf6;
+  border-left: 5px solid #e8e8e8;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  transform: rotate(25deg);
+}
+
+.completed_container {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.chapter_container {
+  padding-left: 50px;
+}
+
+.category {
+  width: 49px;
+  height: 18px;
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  width: 197px;
+  height: 29px;
+  margin: 3px 323px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  width: 107px;
+  height: 19px;
+  margin: 4px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.button {
+  width: 73px;
+  height: 19px;
+  margin: 3px 0 2px 0;
+  padding: 0;
+  text-align: left;
+  border: none;
+  border-right: 1px solid #e8e8e8;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+#edit {
+  border-right: 0;
+}
+
+#delete {
+  text-align: center;
+  margin-right: 15px;
+}
+
+.percent {
+  width: 68px;
+  height: 39px;
+  margin: 1px 0 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  width: 80px;
+  height: 18px;
+  margin: 7px 0 12px 20px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.current_chapter {
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  height: 21px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update_progress {
+  width: 184px;
+  height: 33px;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  border: none;
+  background-color: #0290ff;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}

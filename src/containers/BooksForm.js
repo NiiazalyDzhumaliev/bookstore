@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { CREATE_BOOK } from '../actions';
+import styles from './BooksForm.module.css';
 
 const { v4: UuidV4 } = require('uuid');
 
@@ -36,22 +37,31 @@ const BooksForm = props => {
   ];
 
   return (
-    <form id="form" onChange={handleChange} onSubmit={handleSubmit}>
-      <label htmlFor="title">
-        Title
-        <input type="text" id="title" name="title" />
-      </label>
-      <br />
-      <label htmlFor="categories">
-        Choose a category
+    <div id={styles.form_container}>
+      <h1 className={styles.header}>{'add new book'.toUpperCase()}</h1>
+      <form
+        className={styles.form}
+        onChange={handleChange}
+        onSubmit={handleSubmit}
+      >
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Book title"
+          className={styles.title_input}
+        />
+
+        <br />
+
         <select
-          id="categories"
+          id={styles.categories}
           name="category"
           value={state.category}
           onChange={handleChange}
         >
-          <option value="" key={UuidV4()}>
-            ---
+          <option value="" key={UuidV4()} disabled defaultValue="">
+            Category
           </option>
           {categories.map(category => (
             <option value={category} key={UuidV4()}>
@@ -59,10 +69,15 @@ const BooksForm = props => {
             </option>
           ))}
         </select>
-      </label>
-      <br />
-      <input type="submit" value="Submit" />
-    </form>
+
+        <br />
+        <input
+          type="submit"
+          value={'Add book'.toUpperCase()}
+          className={styles.submit}
+        />
+      </form>
+    </div>
   );
 };
 
