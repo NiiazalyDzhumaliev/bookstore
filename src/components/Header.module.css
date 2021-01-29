@@ -1,11 +1,13 @@
 .header_container {
   display: flex;
+  align-items: center;
   padding: 23px 99px 27px 100px;
   background-color: #fff;
 }
 
 .bookstore_container {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
@@ -26,7 +28,7 @@
 .books {
   width: 59px;
   height: 16px;
-  margin: 18px 24px 11px 0;
+  margin-right: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: normal;
