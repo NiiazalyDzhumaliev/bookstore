@@ -34,7 +34,7 @@ const CategoryFilter = props => {
       value={filter}
     >
       <option value="" key={UuidV4()}>
-        All
+        {'categories'.toUpperCase()}
       </option>
       {categories.map(category => (
         <option value={category} key={UuidV4()}>
